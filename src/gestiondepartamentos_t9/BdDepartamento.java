@@ -23,7 +23,7 @@ public class BdDepartamento {
               //llamada al driver de mysql (siempre es igual para mysql)
               Class.forName("com.mysql.jdbc.Driver");
               //Conexion con la base de datos. Parámetros: nombre servidor(a través de jdbc:mysql//ruta, nombre usuario y password
-              Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/50205883b",
+              Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/xxx",
                       "usuario1","1234");
               
               //Sentencia sql, con interrogaciones para sustituir los parámetros por valores concretos
@@ -66,7 +66,7 @@ public class BdDepartamento {
               //llamada al driver de mysql (siempre es igual para mysql)
               Class.forName("com.mysql.jdbc.Driver");
               //Conexion con la base de datos. Parámetros: nombre servidor(a través de jdbc:mysql//ruta, nombre usuario y password
-              Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/50205883b",
+              Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/xxx",
                       "usuario1","1234");
               
               //Leer registros
@@ -101,7 +101,7 @@ public class BdDepartamento {
        try{
            
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/50205883b","usuario1","1234");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/xxx","usuario1","1234");
            
             
             String sql = "update departamento set nombre=?, ID_localizacion=?, ID_manager=? where codigo=?"; 
@@ -143,7 +143,7 @@ public class BdDepartamento {
         try {
             //cargar Driver
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/50205883b","usuario1","1234");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/xxx","usuario1","1234");
            
             //Consulta
             String sql = "select * from departamento where codigo like '%"+codigo+"%'"; 
@@ -192,7 +192,7 @@ public class BdDepartamento {
        try{
             //Cargar driver y conectar con la base de datos
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/50205883b","usuario1","1234");
+            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/xxx","usuario1","1234");
            
             //Consulta a la base de datos
             String sql = "select * from departamento";
